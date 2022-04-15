@@ -1,3 +1,5 @@
 import './style/main.scss'
 
-console.log(123)
+// import logo from './assets/logo.svg'
+
+// console.log(logo)

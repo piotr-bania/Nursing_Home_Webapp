@@ -1,5 +1,6 @@
-const path = require('path')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
 
 module.exports = {
     mode: 'development',
@@ -8,8 +9,11 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name][contenthash].js'
+        // filename: '[name][contenthash].js',
+        clean: true,
+        assetModuleFilename: '[name][ext]'
     },
+    devtool: 'source-map',
     devServer: {
         static: {
             directory: path.resolve(__dirname, 'dist'),
@@ -22,13 +26,34 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.scss$/,
-            use: [
-                'style-loader',
-                'css-loader',
-                'sass-loader'
-            ]
-        }]
+
+            // Style
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader'
+                ]
+            },
+            {
+                // Scripts
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            '@babel/preset-env'
+                        ]
+                    }
+                }
+            },
+            {
+                // Images
+                test: /\.(png|svg|jpg|gif|jpeg)$/i,
+                type: 'asset/resource'
+            },
+        ]
     },
     plugins: [
         new HtmlWebpackPlugin({
