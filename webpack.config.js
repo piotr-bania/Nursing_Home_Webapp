@@ -33,7 +33,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Nursing Home | Webapp',
-            filename: 'home.html',
+            filename: 'index.html',
             template: 'src/template.html'
         })
     ]
