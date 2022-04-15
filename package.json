@@ -1,0 +1,20 @@
+{
+  "name": "nursing_home_webapp",
+  "version": "1.0.0",
+  "description": "Nursing Home website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotr-bania/Nursing_Home_Webapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piotr-bania/Nursing_Home_Webapp/issues"
+  },
+  "homepage": "https://github.com/piotr-bania/Nursing_Home_Webapp#readme"
+}
