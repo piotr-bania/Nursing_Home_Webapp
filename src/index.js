@@ -1,5 +1,4 @@
 import './style/main.scss'
+import logo from '../src/logo.svg'
 
-// import logo from './assets/logo.svg'
-
-// console.log(logo)
+console.log(logo)

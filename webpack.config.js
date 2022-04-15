@@ -9,7 +9,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        // filename: '[name][contenthash].js',
+        filename: '[name][contenthash].js',
         clean: true,
         assetModuleFilename: '[name][ext]'
     },
@@ -52,6 +52,9 @@ module.exports = {
                 // Images
                 test: /\.(png|svg|jpg|gif|jpeg)$/i,
                 type: 'asset/resource'
+                // use: [{
+                //     loader: 'file-loader'
+                // }]
             },
         ]
     },
