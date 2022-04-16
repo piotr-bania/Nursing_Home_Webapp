@@ -28,6 +28,7 @@
 
     --accent: #F6B260;
     --grey: #C9D4DA;
+    --white: #FFFFFF;
 
     --header: #0A0111;
     --text: #666666;
@@ -82,6 +83,7 @@ body {
     font-family: haboro-contrast-normal, sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 20px;
     color: var(--text);
     line-height: 1.6;
     user-select: none;
@@ -128,4 +130,8 @@ button {
     font-weight: 700;
     font-style: normal;
     font-size: 14px;
+    background-color: var(--accent);
+    color: var(--white);
+    border-radius: 10px;
+    border-width: 0px;
 }
