@@ -171,9 +171,9 @@ section {
     margin: auto;
 }
 
-// ------------------------------ Header ------------------------------
+// ------------------------------ Navbar ------------------------------
 
-.header {
+.navbar {
     // position: fixed;
     background: url(../wave_2.svg);
     background-color: linear-gradient(to left, var(--blue-light), var(--purple-light));
@@ -182,6 +182,15 @@ section {
     background-size: cover;
     width: 100%;
     height: 100px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .contactNo {
@@ -238,11 +247,17 @@ section {
     }
 }
 
-.logo {
-    width: 60px;
-    height: auto;
+// ------------------------------ Header ------------------------------
 
-    &:hover {
-        cursor: pointer;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 150px;
+    
+    button {
+        margin: 10px 0;
     }
 }
