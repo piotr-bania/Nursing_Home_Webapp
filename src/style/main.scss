@@ -28,6 +28,7 @@
 
     --accent: #F6B260;
     --grey: #C9D4DA;
+    --off-white: #FBFBFB;
     --white: #FFFFFF;
 
     --header: #0A0111;
@@ -43,19 +44,9 @@
 
     // Shadows
     --main-shadow:
-        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.07),
-        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.05),
-        12.5px 12.5px 10px rgba(0, 0, 0, 0.042),
-        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.035),
-        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.028),
-        100px 100px 80px rgba(0, 0, 0, 0.02);
+        0 4px 24px 0 rgb(103 151 255 / 10%), 0 12px 64px 0 rgb(103 151 255 / 10%);
     --hover-shadow:
-        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.1),
-        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.072),
-        12.5px 12.5px 10px rgba(0, 0, 0, 0.06),
-        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.05),
-        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.04),
-        100px 100px 80px rgba(0, 0, 0, 0.028);
+        0 4px 24px 0 rgb(103 151 255 / 25%), 0 12px 64px 0 rgb(103 151 255 / 25%);
 
     // Animation
     --animate-duration: 1s;
@@ -67,19 +58,23 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     text-decoration: none;
     list-style: none;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
 }
 
 html {
     box-sizing: inherit;
     scroll-behavior: smooth;
     margin: auto;
+
 }
 
 body {
+    background-color: var(--off-white);
     font-family: haboro-contrast-normal, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -87,9 +82,10 @@ body {
     color: var(--text);
     line-height: 1.6;
     user-select: none;
+    margin: auto;
 }
 
-// ------------------------------ Variables ------------------------------
+// ------------------------------ Fonts ------------------------------
 
 h1,
 h2,
@@ -124,14 +120,100 @@ p {
     font-style: normal;
 }
 
+// ------------------------------ Buttons ------------------------------
+
 button {
     text-transform: uppercase;
     font-family: haboro-contrast-extended, sans-serif;
-    font-weight: 700;
+    font-weight: 300;
     font-style: normal;
     font-size: 14px;
-    background-color: var(--accent);
     color: var(--white);
+    padding: 12px 24px;
     border-radius: 10px;
     border-width: 0px;
+    box-shadow: var(--main-shadow);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    box-shadow: var(--hover-shadow);
+}
+
+.button_purple {
+    background-color: var(--purple);
+}
+
+.button_purple:hover {
+    background-color: rgba(179, 97, 246, 0.8);
+    cursor: pointer;
+}
+
+.button_black {
+    background-color: var(--header);
+}
+
+.button_black:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+}
+
+// ------------------------------ Sections ------------------------------
+
+section {
+    width: 100%;
+    padding: 0 40px;
+}
+
+.wrapper {
+    max-width: 1640px;
+    margin: auto;
+}
+
+// ------------------------------ Header ------------------------------
+
+.header {
+    // position: fixed;
+    background: url(../wave_2.svg);
+    background-color: linear-gradient(to left, var(--blue-light), var(--purple-light));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+}
+
+.contactNo {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: medium;
+
+    p {
+        font-family: haboro-contrast-extended, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+}
+
+.menu {
+    position: fixed;
+    top: 45px;
+    left: 5vw;
+    right: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: var(--main-shadow);
+}
+
+.logo {
+    width: 60px;
+    height: auto;
 }
