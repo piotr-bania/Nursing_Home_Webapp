@@ -142,21 +142,22 @@ button:hover {
 
 .button_purple {
     background-color: var(--purple);
-}
 
-.button_purple:hover {
-    background-color: rgba(179, 97, 246, 0.8);
-    cursor: pointer;
+    &:hover {
+        background-color: rgba(179, 97, 246, 0.8);
+        cursor: pointer;
+    }
 }
 
 .button_black {
     background-color: var(--header);
-}
 
-.button_black:hover {
+    &:hover {
         background-color: rgba(0, 0, 0, 0.8);
         cursor: pointer;
+    }
 }
+
 
 // ------------------------------ Sections ------------------------------
 
@@ -213,7 +214,35 @@ section {
     box-shadow: var(--main-shadow);
 }
 
+.menu_bottom {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: haboro-contrast-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: medium;
+    word-spacing: 15px;
+
+    a {
+        color: var(--header);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: var(--blue);
+        }
+    }
+}
+
 .logo {
     width: 60px;
     height: auto;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
