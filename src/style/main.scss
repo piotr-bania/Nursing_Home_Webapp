@@ -124,12 +124,13 @@ p {
 
 button {
     text-transform: uppercase;
-    font-family: haboro-contrast-extended, sans-serif;
-    font-weight: 300;
+    font-family: haboro-contrast-normal, sans-serif;
+    font-weight: 500;
     font-style: normal;
-    font-size: 14px;
+    font-size: 18px;
+    letter-spacing: 1px;
     color: var(--white);
-    padding: 12px 24px;
+    padding: 15px 40px;
     border-radius: 10px;
     border-width: 0px;
     box-shadow: var(--main-shadow);
@@ -200,32 +201,32 @@ section {
     align-items: center;
     justify-content: center;
     color: var(--white);
-    font-size: medium;
 
     p {
         font-family: haboro-contrast-extended, sans-serif;
         font-weight: 700;
         font-style: normal;
+        font-size: 18px;
     }
 }
 
 .menu {
     position: fixed;
-    top: 45px;
-    left: 5vw;
-    right: 5vw;
+    top: 50px;
+    left: 10vw;
+    right: 10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 20px 30px;
+    border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: var(--main-shadow);
 }
 
 .menu_bottom {
     position: fixed;
-    top: 150px;
+    top: 195px;
     left: 0;
     width: 100%;
     display: flex;
@@ -234,7 +235,7 @@ section {
     font-family: haboro-contrast-extended, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: medium;
+    font-size: 18px;
     word-spacing: 15px;
 
     a {
