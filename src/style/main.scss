@@ -127,8 +127,8 @@ button {
     font-family: haboro-contrast-normal, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 18px;
-    letter-spacing: 1px;
+    font-size: 1rem;
+    letter-spacing: 3px;
     color: var(--white);
     padding: 15px 40px;
     border-radius: 10px;
@@ -164,25 +164,26 @@ button:hover {
 
 section {
     width: 100%;
-    padding: 0 40px;
+    // padding: 0 40px;
+    margin: auto;
 }
 
 .wrapper {
     max-width: 1640px;
+    width: 100%;
     margin: auto;
 }
 
 // ------------------------------ Navbar ------------------------------
 
 .navbar {
-    // position: fixed;
-    background: url(../wave_2.svg);
-    background-color: linear-gradient(to left, var(--blue-light), var(--purple-light));
+    background: url(../wave.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100px;
+    height: 200px;
+    box-shadow: var(--main-shadow);
 }
 
 .logo {
@@ -196,7 +197,8 @@ section {
 
 .contactNo {
     width: 100%;
-    padding: 10px;
+    margin: 0;
+    padding-top: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,27 +208,29 @@ section {
         font-family: haboro-contrast-extended, sans-serif;
         font-weight: 700;
         font-style: normal;
-        font-size: 18px;
+        font-size: 1rem;
     }
 }
 
 .menu {
     position: fixed;
+    width: 80vw;
     top: 50px;
     left: 10vw;
     right: 10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 30px;
-    border-radius: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: var(--main-shadow);
+    z-index: 10;
 }
 
 .menu_bottom {
     position: fixed;
-    top: 195px;
+    top: 158px;
     left: 0;
     width: 100%;
     display: flex;
@@ -235,8 +239,9 @@ section {
     font-family: haboro-contrast-extended, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 18px;
+    font-size: 1rem;
     word-spacing: 15px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
 
     a {
         color: var(--header);
@@ -255,10 +260,160 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative;
-    top: 150px;
-    
+    background: url(../header_background.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+    color: var(--white);
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 100px auto 150px;
+
+        h1,
+        h3,
+        p {
+            color: var(--white);
+            margin: 20px;
+        }
+    }
+
     button {
-        margin: 10px 0;
+        margin: 10px;
+    }
+}
+
+// ------------------------------ Media queries ------------------------------
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .navbar {
+        height: 190px;
+    }
+
+    .header {
+        .wrapper {
+            margin: 60px auto 90px;
+        }
+    }
+
+    button {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        color: var(--white);
+        padding: 15px 30px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .menu {
+        width: 84vw;
+        left: 8vw;
+        right: 8vw;
+        padding: 8px 16px;
+    }
+
+    .menu_bottom {
+        top: 147px;
+        font-size: 0.9rem;
+    }
+
+    .contactNo {
+        padding-top: 14px;
+        
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    h1 {
+        font-size: 3.052rem;
+    }
+    
+    h2 {
+        font-size: 2.441rem;
+    }
+    
+    h3 {
+        font-size: 1.953rem;
+    }
+    
+    h4 {
+        font-size: 1.563rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 150px;
+    }
+
+    .header {
+        .wrapper {
+            margin: 30px auto 50px;
+        }
+    }
+
+    section {
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        color: var(--white);
+        padding: 10px 20px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .menu {
+        width: 90vw;
+        left: 5vw;
+        right: 5vw;
+        padding: 5px 10px;
+    }
+
+    .menu_bottom {
+        top: 120px;
+        font-size: 0.8rem;
+    }
+
+    .contactNo {
+        padding-top: 15px;
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
+    h1 {
+        font-size: 2.488rem;
+    }
+    
+    h2 {
+        font-size: 2.074rem;
+    }
+    
+    h3 {
+        font-size: 1.728rem;
+    }
+    
+    h4 {
+        font-size: 1.44rem;
+    }
+
+    p {
+        font-size: 0.8rem;
     }
 }
