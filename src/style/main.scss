@@ -285,6 +285,62 @@ section {
     }
 }
 
+
+
+
+// ------------------------------ Main ------------------------------
+
+
+
+
+
+
+// ------------------------------ Footer ------------------------------
+
+footer {
+    background-image: linear-gradient(to right, var(--purple-dark), var(--purple-light));
+    width: 100%;
+    padding: 80px 20vw;
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 3fr repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            color: var(--white);
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: var(--header);
+            }
+        }
+    }
+
+    h1,
+    h2,
+    h4 {
+        color: var(--grey);
+        margin: 0;
+    }
+
+    h3,
+    p {
+        color: var(--white);
+        margin: 0;
+    }
+}
+
+
+
+
 // ------------------------------ Media queries ------------------------------
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
@@ -317,13 +373,13 @@ section {
     }
 
     .menu_bottom {
-        top: 147px;
+        top: 14px;
         font-size: 0.9rem;
     }
 
     .contactNo {
         padding-top: 14px;
-        
+
         p {
             font-size: 0.9rem;
         }
@@ -332,21 +388,25 @@ section {
     h1 {
         font-size: 3.052rem;
     }
-    
+
     h2 {
         font-size: 2.441rem;
     }
-    
+
     h3 {
         font-size: 1.953rem;
     }
-    
+
     h4 {
         font-size: 1.563rem;
     }
 
-    p {
+    p, li {
         font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 50px 18vw;
     }
 }
 
@@ -400,20 +460,41 @@ section {
     h1 {
         font-size: 2.488rem;
     }
-    
+
     h2 {
         font-size: 2.074rem;
     }
-    
+
     h3 {
         font-size: 1.728rem;
     }
-    
+
     h4 {
         font-size: 1.44rem;
     }
 
-    p {
+    p, li {
         font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 40px 7vw;
+
+        .wrapper {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .left {
+            grid-area: 1 / 2 / 2 / 4;
+        }
+
+        .middle {
+            grid-area: 1 / 1 / 3 / 2;
+        }
+
+        .right {
+            grid-area: 2 / 2 / 3 / 4;
+        }
     }
 }
