@@ -335,10 +335,43 @@ footer {
         color: var(--white);
         margin: 0;
     }
+
+    .address {
+        background-color: var(--header);
+        margin-top: 50px;
+        padding: 50px;
+        border-radius: 30px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+
+        button {
+            width: 40px;
+            height: 40px;
+            padding: 5px 10px;
+            color: var(--header);
+        }
+    }
+
+    .left_keft {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .left_middle {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .right_middle {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .right_right {
+        grid-area: 1 / 4 / 2 / 5;
+    }
 }
-
-
-
 
 // ------------------------------ Media queries ------------------------------
 
@@ -410,6 +443,17 @@ footer {
 
     footer {
         padding: 50px 18vw;
+
+        .address {
+            margin-top: 40px;
+            padding: 40px;
+            border-radius: 25px;
+
+            button {
+                width: 36px;
+                height: 36px;
+            }
+        }
     }
 }
 
@@ -502,6 +546,36 @@ footer {
 
         .right {
             grid-area: 2 / 2 / 3 / 4;
+        }
+
+        .address {
+            margin-top: 30px;
+            padding: 30px;
+            border-radius: 20px;
+
+            button {
+                width: 32px;
+                height: 32px;
+            }
+
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+    
+            .left_keft {
+                grid-area: 1 / 1 / 2 / 2;
+            }
+    
+            .left_middle {
+                grid-area: 1 / 2 / 2 / 3;
+            }
+    
+            .right_middle {
+                grid-area: 2 / 1 / 3 / 2;
+            }
+    
+            .right_right {
+                grid-area: 2 / 2 / 3 / 3;
+            }
         }
     }
 }
