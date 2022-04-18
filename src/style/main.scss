@@ -39,8 +39,7 @@
     --header-font: 'forma-djr-micro, sans-serif';
 
     // Font size
-    --links-font-size: 12px;
-    --text-font-size: 16px;
+    --font-size: 20px;
 
     // Shadows
     --main-shadow:
@@ -78,7 +77,7 @@ body {
     font-family: haboro-contrast-normal, sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 20px;
+    font-size: var(--font-size);
     color: var(--text);
     line-height: 1.6;
     user-select: none;
@@ -127,7 +126,7 @@ button {
     font-family: haboro-contrast-normal, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1rem;
+    font-size: var(--font-size);
     letter-spacing: 3px;
     color: var(--white);
     padding: 15px 40px;
@@ -208,7 +207,7 @@ section {
         font-family: haboro-contrast-extended, sans-serif;
         font-weight: 700;
         font-style: normal;
-        font-size: 1rem;
+        font-size: var(--font-size);
     }
 }
 
@@ -239,7 +238,7 @@ section {
     font-family: haboro-contrast-extended, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1rem;
+    font-size: var(--font-size);
     word-spacing: 15px;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
 
@@ -355,7 +354,7 @@ footer {
     }
 
     button {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         letter-spacing: 2px;
         color: var(--white);
         padding: 15px 30px;
@@ -373,15 +372,18 @@ footer {
     }
 
     .menu_bottom {
-        top: 14px;
-        font-size: 0.9rem;
+        top: 147px;
+
+        li {
+            font-size: 0.95rem;
+        }
     }
 
     .contactNo {
         padding-top: 14px;
 
         p {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
     }
 
@@ -401,8 +403,9 @@ footer {
         font-size: 1.563rem;
     }
 
-    p, li {
-        font-size: 0.9rem;
+    p,
+    li {
+        font-size: 0.95rem;
     }
 
     footer {
@@ -427,7 +430,7 @@ footer {
     }
 
     button {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         letter-spacing: 1px;
         color: var(--white);
         padding: 10px 20px;
@@ -446,14 +449,17 @@ footer {
 
     .menu_bottom {
         top: 120px;
-        font-size: 0.8rem;
+
+        li {
+            font-size: 0.9rem;
+        }
     }
 
     .contactNo {
         padding-top: 15px;
 
         p {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
     }
 
@@ -473,8 +479,9 @@ footer {
         font-size: 1.44rem;
     }
 
-    p, li {
-        font-size: 0.8rem;
+    p,
+    li {
+        font-size: 0.9rem;
     }
 
     footer {
