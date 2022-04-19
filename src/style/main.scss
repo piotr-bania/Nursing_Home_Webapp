@@ -358,7 +358,7 @@ main {
 
     .address {
         background-color: var(--header);
-        margin-top: 50px;
+        margin-top: -110px;
         padding: 50px;
         border-radius: 30px;
         width: 100%;
@@ -367,6 +367,7 @@ main {
         grid-template-rows: 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
+        transform: translateY(180px);
 
         button {
             width: 40px;
@@ -405,6 +406,7 @@ main {
     form {
         width: 100%;
         background-color: var(--white);
+        margin-top: 110px;
         padding: 50px;
         border-radius: 30px;
 
@@ -513,9 +515,10 @@ main {
         padding: 50px 20vw;
 
         .address {
-            margin-top: 40px;
+            margin-top: -80px;
             padding: 40px;
             border-radius: 25px;
+            transform: translateY(125px);
 
             button {
                 width: 36px;
@@ -526,6 +529,11 @@ main {
 
     .contact {
         padding: 50px 20vw;
+        
+        form {
+            margin-top: 70px;
+            padding: 40px;
+        }
     }
 
     main {
@@ -625,7 +633,7 @@ main {
         }
 
         .address {
-            margin-top: 30px;
+            margin-top: -150px;
             padding: 30px;
             border-radius: 20px;
 
@@ -657,6 +665,11 @@ main {
 
     .contact {
         padding: 50px 5vw;
+
+        form {
+            margin-top: 120px;
+            padding: 30px;
+        }
     }
 
     main {
