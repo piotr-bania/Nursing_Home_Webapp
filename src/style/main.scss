@@ -173,6 +173,16 @@ button:hover {
     }
 }
 
+.button_blue {
+    background-color: var(--blue-light);
+    color: var(--white);
+
+    &:hover {
+        background-color: rgba(153, 164, 249, 0.8);
+        cursor: pointer;
+    }
+}
+
 
 // ------------------------------ Sections ------------------------------
 
