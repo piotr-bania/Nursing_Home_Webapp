@@ -188,14 +188,20 @@ button:hover {
 
 section {
     width: 100%;
-    // padding: 0 40px;
     margin: auto;
+    padding: 5vh 15vw;
 }
 
 .wrapper {
     max-width: 1640px;
     width: 100%;
-    margin: auto;
+    margin: 5vh auto;
+}
+
+#about,
+#services {
+    padding: 5vh 15vw;
+    text-align: center;
 }
 
 // ------------------------------ Navbar ------------------------------
@@ -222,7 +228,7 @@ section {
 .contactNo {
     width: 100%;
     margin: 0;
-    padding-top: 12px;
+    transform: translateY(-90px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,7 +300,6 @@ section {
     .wrapper {
         display: flex;
         flex-direction: column;
-        margin: 100px auto 150px;
 
         h1,
         h3,
@@ -309,27 +314,50 @@ section {
     }
 }
 
+// ------------------------------ About ------------------------------
 
+// #about {
+//     padding: 10vh 15vw;
+// }
 
+// ------------------------------ Services ------------------------------
 
-// ------------------------------ Main ------------------------------
-
-main {
+#services {
+    background: url(../background_1.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     width: 100%;
-    padding: 80px 20vw;
+    min-height: 50vh;
 
-    text-align: center;
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        color: var(--white);
+        margin: 20px;
+    }
+
+    .bold_paragraph {
+        color: var(--grey);
+    }
+
+    .wrapper {
+        .blurbs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+    }
 }
-
-
-
 
 // ------------------------------ Footer ------------------------------
 
 .footer {
     background-image: linear-gradient(to right, var(--purple-dark), var(--purple-light));
-    width: 100%;
-    padding: 80px 20vw;
 
     .wrapper {
         display: grid;
@@ -466,6 +494,11 @@ main {
         }
     }
 
+    section {
+        margin: 0;
+        padding: 5vh 10vw;
+    }
+
     button {
         font-size: 0.95rem;
         letter-spacing: 2px;
@@ -493,7 +526,7 @@ main {
     }
 
     .contactNo {
-        padding-top: 14px;
+        transform: translateY(-85px);
 
         p {
             font-size: 0.95rem;
@@ -539,15 +572,11 @@ main {
 
     .contact {
         padding: 50px 20vw;
-        
+
         form {
             margin-top: 70px;
             padding: 40px;
         }
-    }
-
-    main {
-        padding: 50px 20vw;
     }
 }
 
@@ -564,7 +593,7 @@ main {
 
     section {
         margin: 0;
-        padding: 0;
+        padding: 5vh 5vw;
     }
 
     button {
@@ -594,7 +623,7 @@ main {
     }
 
     .contactNo {
-        padding-top: 15px;
+        transform: translateY(15px);
 
         p {
             font-size: 0.9rem;
