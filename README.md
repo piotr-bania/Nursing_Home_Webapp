@@ -2,7 +2,8 @@
 Fully responsive Nursing Home landing page.
 This is a replica of an Elegant Themes <a href="https://bit.ly/3NhLHDc">Nursing Home Layout Pack</a>and <a href="https://bit.ly/3NhLHDc">Header and Footer</a>.
 
-<h4>Link to the final project:</h4> http://retirement-center.space
+<h4>Link to the final project:</h4>
+http://retirement-center.space
 
 <br>
 <br>
