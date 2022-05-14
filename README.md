@@ -1,5 +1,5 @@
 # Nursing_Home_Webapp
-Nursing Home website.
+Fully responsive Nursing Home landing page. This is a replica of an Elegant Themes landing page + <a href="https://bit.ly/3NhLHDc">Header and Footer.</a>
 
 http://retirement-center.space
 
